@@ -195,6 +195,10 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_COPY_FILES += \
     vendor/infinity/prebuilt/common/etc/init/init.openssh.rc:$(TARGET_COPY_OUT_PRODUCT)/etc/init/init.openssh.rc
+    
+# Partition overlay
+PRODUCT_COPY_FILES += \
+    vendor/infinity/overlay/partition_order.xml:$(TARGET_COPY_OUT_PRODUCT)/overlay/partition_order.xml
 
 # Recorder
 PRODUCT_PACKAGES += \
@@ -335,3 +339,5 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 
 # GameProps
 include vendor/infinity/config/game_props.mk
+
+
